@@ -1,15 +1,9 @@
-{%load static %}
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="{% static "styles.css" %}" >
-    <title>Details</title>
-  </head>
-  <body>
-    <p class="title">{{team.name}}</p>
-    <p class="description">{{team.description}}</p>
-    <p class="members">{{team.members}}</p>
-  </body>
-</html>
+{% extends 'base.html' %} {% block content %}
+<center>
+  <p class="title">{{team.name}}</p>
+  <p class="description">{{team.description}}</p>
+  {% for member in team.members%}
+    <p class="members">{{ member }}</p>
+  {% endfor %}
+</center>
+{% endblock content %}

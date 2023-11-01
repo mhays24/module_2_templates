@@ -15,7 +15,7 @@ teams = {
     "management": Teams(
         name="Management",
         description="The management team is responsible for the overall management of the building",
-        members=["Owen", "Jeremiah", "Nick", "Ab", "Abigail", "Mathew"],
+        members=["Owen", "Jeremiah", "Nick", "Ab", "Abigail", "Matthew"],
     ),
     "procurement": Teams(
         name="Procurement",
@@ -29,7 +29,7 @@ teams = {
     ),
     "community": Teams(
         name="Community",
-        description="The community team is responsible for the planning the events and activities for the building.",
+        description="The community team is responsible for the planning the events and activities BCCA participate's in.",
         members=["Jordan", "Joby", "Aj", "Micah", "Caleb"],
     ),
 }

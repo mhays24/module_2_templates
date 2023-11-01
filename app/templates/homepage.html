@@ -1,17 +1,11 @@
-{% load static %}
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="{% static "styles.css" %}" >
-    <title>Homepage</title>
-  </head>
-  <body>
-    <h1>Welcome to Base Camp Coding Academy Team Checker</h1>
-    <a class="Community" href="community/">Community-Team</a>
-    <a class="Documentation" href="documentation/">Documentation-Team</a>
-    <a class="management" href="management/">Management-Team</a>
-    <a class="Procurement" href="procurement/">Procurement-Team</a>
-  </body>
-</html>
+{% extends 'base.html' %}
+{% block content %}
+<center>
+  <h1>Teams</h1>
+  <p>(Here you can find all the teams of Base Camp.)</p>
+  <a class="community" href="community/">Community-Team</a>
+  <a class="documentation" href="documentation/">Documentation-Team</a>
+  <a class="management" href="management/">Management-Team</a>
+  <a class="procurement" href="procurement/">Procurement-Team</a>
+</center>
+  {% endblock content %}
