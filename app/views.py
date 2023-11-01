@@ -25,15 +25,7 @@ teams = {
     "documentation": Teams(
         name="Documentation",
         description="The documentation team is responsible for documenting things that happen around the building and events.",
-        members=[
-            "Conner",
-            "Kaleigh",
-            "Blair",
-            "Mina",
-            "Jay",
-            "Joshua",
-            "Kayleah",
-        ],
+        members=["Conner", "Kaleigh", "Blair", "Mina", "Jay", "Joshua", "Kayleah"],
     ),
     "community": Teams(
         name="Community",
