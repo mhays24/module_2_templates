@@ -1,7 +1,7 @@
-from django.shortcuts import render
+from dataclasses import dataclass
 from django.http.response import HttpResponse
 from django.http.request import HttpRequest
-from dataclasses import dataclass
+from django.shortcuts import render
 
 
 @dataclass
@@ -35,11 +35,13 @@ teams = {
 }
 
 
-def homepage(request):
+
+
+def homepage(request: HttpRequest) -> HttpResponse:
     return render(request, "homepage.html")
 
 
-def team_viewer(request, team):
+def team_viewer(request: HttpRequest, team: str) -> HttpResponse:
     context = {
         "team": teams[team],
     }
